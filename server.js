@@ -2,10 +2,10 @@ const express = require('express');
 
 const app = express();
 
-app.use(express.static('./dist/tourof-heroes'));
+app.use(express.static('./dist/TourofHeroes'));
 
 app.get('/*', function (req, res) {
-  res.sendFile('index.html', { root: 'dist/tourof-heroes' }
+  res.sendFile('app.component.html', { root: 'dist/TourofHeroes' }
   );
 });
 
